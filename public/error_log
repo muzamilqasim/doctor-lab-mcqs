@@ -1,0 +1,109 @@
+[09-Feb-2025 15:09:34 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:09:34 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:09:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:10:45 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:10:45 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:10:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:11:01 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:11:01 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:11:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:11:17 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:11:17 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:11:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:21:18 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:21:18 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:21:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:24:08 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:24:08 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:24:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:26:47 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:26:47 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:26:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:09 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:09 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:09 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:30 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:30 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:51 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:51 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:28:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:29:56 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:29:56 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:29:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:30:16 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:30:16 UTC] PHP Warning:  require(/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php): Failed to open stream: No such file or directory in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 15:30:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/doctormcqs/public_html/vendor/composer/../../app/Helpers/helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/doctormcqs/public_html/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/doctormcqs/public_html/vendor/composer/autoload_real.php(45): {closure}('ef157334f1067da...', '/home/doctormcq...')
+#1 /home/doctormcqs/public_html/vendor/autoload.php(25): ComposerAutoloaderInit9c491b8531eec05ba41a11d9276a5749::getLoader()
+#2 /home/doctormcqs/public_html/public/index.php(34): require('/home/doctormcq...')
+#3 {main}
+  thrown in /home/doctormcqs/public_html/vendor/composer/autoload_real.php on line 41
+[09-Feb-2025 16:02:16 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.31. in /home/doctormcqs/public_html/vendor/composer/platform_check.php on line 24
