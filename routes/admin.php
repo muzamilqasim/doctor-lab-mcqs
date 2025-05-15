@@ -26,6 +26,8 @@ Route::middleware('admin')->group(function () {
         Route::get('password', 'password')->name('password');
         Route::post('password', 'passwordUpdate')->name('password.update');
     });
+
+
     Route::controller('NotificationController')->prefix('notification')->name('notification.')->group(function () {
         Route::get('/', 'index')->name('index');
         Route::get('/mark-all', 'markAll')->name('markAll');
@@ -35,6 +37,8 @@ Route::middleware('admin')->group(function () {
     Route::controller('SubCategoryController')->prefix('subCategories')->name('subCategories.')->group(function () {
         Route::get('/get-subcategories', 'getSubcategories')->name('getSubcategories');
     });
+    
+    Route::resource('managers', ManagerController::class);
     Route::resource('google_ad', GoogleAdController::class);
     Route::resource('users', UserController::class);
     Route::resource('questions', QuestionController::class);

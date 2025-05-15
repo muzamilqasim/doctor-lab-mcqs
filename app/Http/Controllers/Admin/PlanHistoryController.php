@@ -8,6 +8,11 @@ use App\Http\Controllers\Controller;
 
 class PlanHistoryController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin.only');
+    }
+    
     public function index() 
     {
         $pageTitle = 'Plan History';

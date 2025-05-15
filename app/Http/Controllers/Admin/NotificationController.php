@@ -8,6 +8,11 @@ use App\Http\Controllers\Controller;
 
 class NotificationController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin.only');
+    }
+
     public function index() 
     {
         $pageTitle = 'Notification';

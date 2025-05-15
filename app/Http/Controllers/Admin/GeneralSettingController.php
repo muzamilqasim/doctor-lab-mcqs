@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Validator;
 
 class GeneralSettingController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin.only');
+    }
+    
     public function index()
     { 
         $pageTitle = 'General Setting';

@@ -1,5 +1,7 @@
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <ul class="navbar-nav ms-auto">
+          @if(auth()->guard('admin')->user()?->hasRole(0))
+
         <li class="nav-item dropdown">
             <a class="nav-link" data-bs-toggle="dropdown" href="#">
                 <i class="far fa-bell"></i>
@@ -33,6 +35,7 @@
                 </li>
             </ul>
         </li>
+        @endif
 
         <li class="nav-item dropdown">
             <a class="nav-link p-0 pe-3" data-bs-toggle="dropdown" href="#">

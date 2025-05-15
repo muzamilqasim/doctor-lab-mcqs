@@ -37,6 +37,7 @@
               </p>
             </a>
           </li>
+          @if(auth()->guard('admin')->user()?->hasRole(0))
           <li class="nav-item">
             <a href="{{ route('admin.google_ad.index') }}" class="nav-link {{ menuActive('admin.google_ad.*') }}">
               <i class="nav-icon fas fa-ad"></i>
@@ -45,6 +46,7 @@
               </p>
             </a>
           </li>
+          @endif
           <li class="nav-item">
             <a href="{{ route('admin.package.index') }}" class="nav-link {{ menuActive('admin.package.*') }}">
               <i class="nav-icon fas fa-box"></i>
@@ -61,11 +63,20 @@
               </p>
             </a>
           </li>
+          @if(auth()->guard('admin')->user()?->hasRole(0))
           <li class="nav-item">
             <a href="{{ route('admin.users.index') }}" class="nav-link {{ menuActive('admin.users.*') }}">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Users
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('admin.managers.index') }}" class="nav-link {{ menuActive('admin.managers.*') }}">
+              <i class="nav-icon fas fa-id-badge"></i>
+              <p>
+                Managers
               </p>
             </a>
           </li>
@@ -101,6 +112,7 @@
               </p>
             </a>
           </li>
+          @endif
         </ul>
       </nav>
     </div>

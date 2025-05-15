@@ -48,6 +48,7 @@
               <a href="{{ route('admin.questions.index') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          @if(auth()->guard('admin')->user()?->hasRole(0))
           <div class="col-lg-3 col-6">
             <div class="small-box bg-custom">
               <div class="inner">
@@ -60,6 +61,7 @@
               <a href="{{ route('admin.users.index') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
+          @endif
         </div>
       </div>
     </section>

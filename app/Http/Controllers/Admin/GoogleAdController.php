@@ -10,6 +10,11 @@ use Illuminate\Support\Facades\Validator;
 
 class GoogleAdController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin.only');
+    }
+
     public function index() 
     {
         $pageTitle = "Google Ads";

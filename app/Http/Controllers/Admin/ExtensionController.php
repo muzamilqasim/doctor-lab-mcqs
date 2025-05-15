@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 
 class ExtensionController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('admin.only');
+    }
+
     public function index()
     {
         $pageTitle = 'Extensions';
