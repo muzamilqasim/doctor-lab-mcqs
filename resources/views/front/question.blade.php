@@ -20,7 +20,7 @@
                 <div class="mb-3">
                     <h4 class="text-primary">{{ $question->title }}</h4>
                     @if($question->question_image)
-                    <img src="{{ getImage(getFilePath('questionImage') . '/' . $question->question_image) }}" alt="Question Image" class="img-fluid mb-3">
+                    <img src="{{ getImage(getFilePath('questionImage') . '/' . $question->question_image) }}" alt="Question Image" class="img-fluid img-thumbnail mb-3" width="35%">
                     @endif
                     <p class="text-dark">{{ $question->question_text }}</p>
                 </div>

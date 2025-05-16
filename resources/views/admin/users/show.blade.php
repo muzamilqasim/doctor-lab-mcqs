@@ -108,6 +108,9 @@
 										</div>
 										<div id="collapse{{ $index }}" class="collapse" aria-labelledby="heading{{ $index }}" data-bs-parent="#testResultsAccordion">
 											<div class="card-body">
+												@if($result->question->question_image)
+					                                <img src="{{ getImage(getFilePath('questionImage') . '/' . $result->question->question_image) }}"alt="Question Image" class="img-fluid mb-3 img-thumbnail rounded" width="35%">
+					                                @endif
 												<p class="card-text text-dark">{{ $result->question->question_text }}</p>
 
 												@php
