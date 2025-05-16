@@ -9,6 +9,19 @@ Route::namespace('Auth')->group(function () {
         Route::post('/login-submit', 'login')->name('login');
         Route::get('/logout', 'logout')->name('logout');
     });
+
+     // Admin Password Reset
+    Route::controller('ForgotPasswordController')->prefix('password')->name('password.')->group(function () {
+        Route::get('reset', 'index')->name('reset');
+        Route::post('reset', 'sendResetEmail')->name('sendResetEmail');
+        Route::get('code-verify', 'codeVerify')->name('code.verify');
+        Route::post('verify-code', 'verifyCode')->name('verify.code');
+    });
+
+    Route::controller('PasswordResetController')->prefix('password')->name('password.')->group(function () {
+        Route::get('reset/{token}', 'showResetForm')->name('reset.form');
+        Route::post('reset/change', 'reset')->name('change');
+    });
 });
 
 Route::middleware('admin')->group(function () {

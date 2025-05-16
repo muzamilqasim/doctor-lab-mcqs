@@ -8,18 +8,11 @@
         <h1>{{ $general->site_title }}</h1>
       </a> 
       <div class="card-body login-card-body">
-        <form class="saveForm" data-storeURL="{{ route('admin.login') }}">
+        <form class="saveForm" data-storeURL="{{ route('admin.password.change') }}">
+          <input type="hidden" name="email" value="{{ $email }}">
+          <input type="hidden" name="token" value="{{ $token }}">
           <div class="input-group mb-3">
-            <input type="text" name="email_or_username" id="email_or_username" class="form-control" placeholder="Email or Username">
-            <div class="input-group-append">
-              <div class="input-group-text">
-                <span class="fas fa-envelope"></span>
-              </div>
-            </div>
-            <p></p>
-          </div>
-          <div class="input-group mb-3">
-            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" id="password" class="form-control" placeholder="New Password">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -27,12 +20,18 @@
             </div>
             <p></p>
           </div>
-          <div class="d-flex flex-wrap justify-content-between">
-            <a href="{{ route('admin.password.reset') }}" class="text-dark">Forgot Password?</a>
+          <div class="input-group mb-3">
+            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Confirm Password">
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-lock"></span>
+              </div>
+            </div>
+            <p></p>
           </div>
           <div class="row">
             <div class="col-mb-4 mt-2">
-              <button type="submit" class="btn btn-dark btn-block">Login</button>
+              <button type="submit" class="btn btn-dark btn-block">Update</button>
             </div>
           </div>
         </form>
