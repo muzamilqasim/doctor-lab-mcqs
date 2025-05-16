@@ -41,13 +41,28 @@ class UserController extends Controller
         if (!$user) {
             return redirect()->route('admin.users.index');
         }
+        
+        // Get test results statistics
         $testResults = TestResult::where('user_id', $user->id)->get();
+        $totalAttempt = $testResults->count();
+        $correctAttempts = $testResults->where('is_correct', 'true')->count();
+        $wrongAttempts = $totalAttempt - $correctAttempts;
+        
         $subscription = $user->subscription;
         $remainingDays = $subscription && $subscription->expires_at
             ? now()->diffInDays($subscription->expires_at, false)
             : 0;
 
-        return view('admin.users.show', compact('pageTitle', 'user', 'testResults', 'subscription', 'remainingDays'));
+        return view('admin.users.show', compact(
+            'pageTitle', 
+            'user', 
+            'testResults', 
+            'subscription', 
+            'remainingDays',
+            'totalAttempt',
+            'correctAttempts',
+            'wrongAttempts'
+        ));
     }
 
     public function create() 

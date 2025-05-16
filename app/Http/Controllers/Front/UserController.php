@@ -17,10 +17,17 @@ class UserController extends Controller
     public function index() 
     {
         $pageTitle = 'Profile';
-        $totalAttempt = TestResult::where('user_id', userId())->count();
+        $user = auth()->user();
+        
+        // Get attempt statistics
+        $totalAttempt = TestResult::where('user_id', $user->id)->count();
+        $correctAttempts = TestResult::where('user_id', $user->id)
+                            ->where('is_correct', 'true')
+                            ->count();
+        $wrongAttempts = $totalAttempt - $correctAttempts;
 
-        // Get the user's active subscription
-        $subscription = auth()->user()->subscription;
+        // Get subscription data
+        $subscription = $user->subscription;
         if($subscription) {
             if ($subscription->expires_at && now()->gt($subscription->expires_at) && $subscription->status !== 'expired') {
                 $subscription->update(['status' => 'expired']);
@@ -28,15 +35,20 @@ class UserController extends Controller
         }
 
         $remainingDays = null;
-
-        // Use the isActive method to check validity
         if ($subscription && $subscription->isActive()) {
             $remainingDays = now()->diffInDays($subscription->expires_at, false);
         } else {
-            $subscription = null; // Hide subscription if expired
+            $subscription = null;
         }
 
-        return view('front.user.profile', compact('pageTitle', 'totalAttempt', 'subscription', 'remainingDays'));
+        return view('front.user.profile', compact(
+            'pageTitle', 
+            'totalAttempt',
+            'correctAttempts',
+            'wrongAttempts',
+            'subscription', 
+            'remainingDays'
+        ));
     }
 
     public function history() 
