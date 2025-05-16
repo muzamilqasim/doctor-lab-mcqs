@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use Srmklive\PayPal\Services\PayPal as PayPalClient;
 use App\Models\Subscription;
+use App\Models\SubscriptionPackage;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,13 +15,12 @@ class PayPalController extends Controller
     {
         $user = Auth::user();
         
-        // Check if user already has an active subscription
         if ($user->subscription && $user->subscription->status === 'active') {
             return redirect()->back()->with('error', 'You already have an active subscription.');
         }
 
         $packageId = $request->package_id;
-        $package = \App\Models\Package::findOrFail($packageId);
+        $package = SubscriptionPackage::findOrFail($packageId);
 
         $provider = new PayPalClient;
         $provider->setApiCredentials(config('paypal'));
@@ -38,8 +38,8 @@ class PayPalController extends Controller
                 ]
             ],
             "application_context" => [
-                "cancel_url" => route('paypal.cancel'),
-                "return_url" => route('paypal.success', ['package_id' => $package->id])
+                "cancel_url" => route('front.paypal.cancel'),
+                "return_url" => route('front.paypal.success', ['package_id' => $package->id])
             ]
         ]);
 
@@ -55,7 +55,6 @@ class PayPalController extends Controller
         return back()->with('error', 'Something went wrong with PayPal. Try again.');
     }
 
-
     public function success(Request $request)
     {
         $provider = new PayPalClient;
@@ -70,7 +69,7 @@ class PayPalController extends Controller
                 'package_id' => $request->package_id,
                 'payment_id' => $response['id'],
                 'status' => 'active',
-                'expires_at' => now()->addDays(\App\Models\SubscriptionPackage::find($request->package_id)->duration),
+                'expires_at' => now()->addDays(SubscriptionPackage::find($request->package_id)->duration),
             ]);
 
             return redirect()->route('front.users.profile')->with('success', 'Subscription successful.');
@@ -81,6 +80,6 @@ class PayPalController extends Controller
 
     public function cancel()
     {
-        return redirect()->route('front.users.profile')->with('error', 'Payment was canceled.');
+        return redirect()->route('front.package')->with('error', 'Payment was canceled.');
     }
 }

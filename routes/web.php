@@ -49,9 +49,9 @@ Route::name('front.')->group(function () {
 	Route::middleware('auth')->group(function () {
 
 		Route::controller(PayPalController::class)->prefix('/paypal')->name('paypal.')->group(function () {
-   			Route::post('/subscribe',  'createSubscription')->name('subscribe');
-	    	Route::get('/success',  'success')->name('success');
-    		Route::get('/cancel', 'cancel')->name('cancel');
+   			Route::post('subscribe',  'createSubscription')->name('subscribe');
+	    	Route::get('success',  'success')->name('success');
+    		Route::get('cancel', 'cancel')->name('cancel');
 		});
 
 		Route::controller(UserController::class)->name('users.')->group(function () {
